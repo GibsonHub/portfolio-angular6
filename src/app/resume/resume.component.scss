@@ -1,0 +1,55 @@
+ul.contact-info{
+  text-align: right;
+  list-style: none;
+}
+
+ul.contact-info li a{
+  text-decoration: none;
+}
+
+.jumbotron.resume-jumbotron{
+  padding: 2rem 2rem;
+}
+
+.resume-heading{
+
+}
+
+.heading-activities,
+.heading-experience,
+.heading-education,
+.heading-summary{
+  color: #007bff;
+  text-transform: uppercase;
+}
+
+.heading-activities i,
+.heading-experience i,
+.heading-education i,
+.heading-summary i{
+  font-size: 27px;
+  padding-right: 10px;
+  max-width: 39px;
+}
+
+p.subheading,
+p.summary-details{
+  padding-left: 40px;
+}
+
+.subheading{
+
+}
+
+.left-of-pipe{
+  font-weight: bold;
+  color: #007bff;
+}
+
+.right-of-pipe{
+  font-weight: bold;
+}
+
+.skills-left{
+  margin-left: 18px;
+}

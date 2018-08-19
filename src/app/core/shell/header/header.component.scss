@@ -1,0 +1,17 @@
+@import "src/theme/theme-variables";
+
+.navbar {
+  margin-bottom: $spacer;
+}
+
+.nav-link.dropdown-toggle {
+  cursor: pointer;
+}
+
+.linkedin-photo{
+  max-width: 40px;
+}
+
+.navigation-label{
+  margin-left: 5px;
+}

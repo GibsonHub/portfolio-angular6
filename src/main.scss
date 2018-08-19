@@ -1,0 +1,47 @@
+/*
+ * Entry point of global application style.
+ * Component-specific style should not go here and be included directly as part of the components.
+ */
+
+// Theme variables, must be included before the libraries to allow overriding defaults
+@import "theme/theme-variables";
+
+// 3rd party libraries
+@import "~bootstrap/scss/bootstrap";
+@import "~@fortawesome/fontawesome-free-webfonts/scss/fontawesome.scss";
+@import "~@fortawesome/fontawesome-free-webfonts/scss/fa-brands.scss";
+@import "~@fortawesome/fontawesome-free-webfonts/scss/fa-regular.scss";
+@import "~@fortawesome/fontawesome-free-webfonts/scss/fa-solid.scss";
+
+// Theme customization
+@import "theme/theme";
+
+.resume-wrapper{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: none;
+}
+
+.resume-wrapper.active{
+    display: block;
+}
+
+.jeff-gibson{
+    font-weight: bold;
+    color: #007bff;
+    text-transform: uppercase;
+}
+
+.row.normalize-row{
+    margin: 0;
+}
+
+// body .container-fluid .row .image-flip{
+//     margin-bottom: 120px;
+// }
+
+// .image-flip .frontside,
+// .image-flip .backside{
+//     min-height: 300px;
+// }

@@ -1,0 +1,37 @@
+<div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+    <div class="mainflip">
+        <div class="frontside">
+            <div class="card" >
+                <img class="card-img-top img-fluid" src="{{ image }}" alt="{{ title }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ title }}</h5>
+                    <p class="card-text" *ngIf="frontBody != '' && frontBody != 'frontbody'">{{ frontBody }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="backside">
+            <div class="card" >
+                <div class="card-header">
+                    <h5>{{ title }}</h5>
+                </div>
+                <div class="card-body">
+                    <!-- <h4 class="card-title">{{ title }}</h4> -->
+                    <h5 class="role" *ngIf="role != ''">
+                        {{ role }}
+                    </h5>
+                    <p class="card-text" *ngIf="backBody != '' && backBody != 'backbody'">{{ backBody }}</p>
+                    <p class="card-text" *ngIf="details != '' && details != 'details'">{{ details }}</p>
+                    <a *ngIf="infoButtonURL != ''" href="{{ infoButtonURL }}" target="{{ target }}" class="btn btn-info btn-md">{{ infoButtonText }}</a>
+                </div>
+                <div class="card-footer">
+                    <span class="footer-text">{{ footer }}</span>
+                    <ul class="tech-stack list-inline">
+                        <li class="tech-item badge badge-primary list-inline-item" *ngFor="let t of tech">
+                            {{ t }}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

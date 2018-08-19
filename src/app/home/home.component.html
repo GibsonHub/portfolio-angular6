@@ -1,0 +1,15 @@
+<div class="container-fluid">
+  <div class="jumbotron text-center">
+    <h1>
+      <span class="jeff-gibson">Jeff Gibson</span> - Career Portfolio & Resume
+    </h1>
+    <app-loader [isLoading]="isLoading"></app-loader>
+    <q [hidden]="isLoading">{{quote}}</q>
+  </div>
+</div>
+
+<div class="container-fluid">
+    <app-projectlist></app-projectlist>
+</div>
+
+<app-resume-modal></app-resume-modal>

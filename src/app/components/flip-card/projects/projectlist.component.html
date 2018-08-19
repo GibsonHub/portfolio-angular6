@@ -1,0 +1,5 @@
+<div class="row normalize-row">
+    <div class="col-xs" *ngFor="let project of projects">
+        <app-flipcard [title]="project.title" [frontBody]="project.frontBody" [backBody]="project.backBody" [image]="project.image" [header]="project.header" [footer]="project.footer" [infoButtonText]="project.infoButtonText" [infoButtonURL]="project.infoButtonURL" [tech]="project.tech" [target]="project.target" [role]="project.role" [details]="project.details"></app-flipcard>
+    </div>
+</div>
